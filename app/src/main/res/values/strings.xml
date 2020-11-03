@@ -5,4 +5,5 @@
     <string name="choose_animal">Favorite animal</string>
     <string name="wolf">wolf</string>
     <string name="rabbit">rabbit</string>
+    <string name="animal_picture">Picture of an animal</string>
 </resources>
