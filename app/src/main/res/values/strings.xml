@@ -3,4 +3,6 @@
     <string name="animal_list">List of animals</string>
     <string name="add_animal">New animal</string>
     <string name="choose_animal">Favorite animal</string>
+    <string name="wolf">wolf</string>
+    <string name="rabbit">rabbit</string>
 </resources>
