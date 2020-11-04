@@ -5,37 +5,29 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
     public ArrayList<Animal> animalList = new ArrayList<>();
 
     public void loadAnimals() {
-        Animal wolf = new Animal(R.string.wolf, R.drawable.wolf, 5);
-        Animal rabbit = new Animal(R.string.rabbit, R.drawable.rabbit, 3);
-
-        animalList.add(wolf);
-        animalList.add(rabbit);
-        animalList.add(wolf);
-        animalList.add(rabbit);
-        animalList.add(wolf);
-        animalList.add(rabbit);
-        animalList.add(wolf);
-        animalList.add(rabbit);
-        animalList.add(wolf);
-        animalList.add(rabbit);
-        animalList.add(wolf);
-        animalList.add(rabbit);
-        animalList.add(wolf);
-        animalList.add(rabbit);
-        animalList.add(wolf);
-        animalList.add(rabbit);
-        animalList.add(wolf);
-        animalList.add(rabbit);
-        animalList.add(wolf);
-        animalList.add(rabbit);
+        animalList.add(new Animal(R.string.bat, R.drawable.bat, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.bear, R.drawable.bear, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.cat, R.drawable.cat, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.dog, R.drawable.dog, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.fox, R.drawable.fox, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.gorilla, R.drawable.gorilla, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.mouse, R.drawable.mouse, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.panda, R.drawable.panda, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.pig, R.drawable.pig, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.rabbit, R.drawable.rabbit, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.squirrel, R.drawable.squirrel, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.tiger, R.drawable.tiger, new Random().nextInt(8) + 1));
+        animalList.add(new Animal(R.string.wolf, R.drawable.wolf, new Random().nextInt(8) + 1));
     }
 
     @Override
@@ -54,5 +46,14 @@ public class MainActivity extends AppCompatActivity {
         AnimalAdapter animalAdapter = new AnimalAdapter(animalList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
         recyclerView.setAdapter(animalAdapter);
+
+        Button addButton = (Button) findViewById(R.id.button_new_item);
+        addButton.setOnClickListener((v) -> {
+            Animal unicorn = new Animal(R.string.unicorn, R.drawable.unicorn, new Random().nextInt(8) + 1);
+            animalList.add(unicorn);
+            int position = animalList.indexOf(unicorn);
+            animalAdapter.notifyItemInserted(position);
+            animalAdapter.notifyDataSetChanged();
+        });
     }
 }

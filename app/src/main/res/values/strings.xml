@@ -1,9 +1,21 @@
 <resources>
-    <string name="app_name">Stippe Jan Aufgabe 3</string>
+    <string name="app_name">Stippe Jan Assignment 3</string>
     <string name="animal_list">List of animals</string>
     <string name="add_animal">New animal</string>
     <string name="choose_animal">Favorite animal</string>
-    <string name="wolf">wolf</string>
-    <string name="rabbit">rabbit</string>
     <string name="animal_picture">Picture of an animal</string>
+    <string name="bat">Bat</string>
+    <string name="bear">Bear</string>
+    <string name="cat">Cat</string>
+    <string name="dog">Dog</string>
+    <string name="fox">Fox</string>
+    <string name="gorilla" translatable="false">Gorilla</string>
+    <string name="mouse">Mouse</string>
+    <string name="panda" translatable="false">Panda</string>
+    <string name="pig">Pig</string>
+    <string name="rabbit">Rabbit</string>
+    <string name="squirrel">Squirrel</string>
+    <string name="tiger" translatable="false">Tiger</string>
+    <string name="unicorn">Unicorn</string>
+    <string name="wolf" translatable="false">Wolf</string>
 </resources>
