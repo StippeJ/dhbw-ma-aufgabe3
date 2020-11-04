@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -42,18 +43,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
         AnimalAdapter animalAdapter = new AnimalAdapter(animalList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
         recyclerView.setAdapter(animalAdapter);
 
-        Button addButton = (Button) findViewById(R.id.button_new_item);
-        addButton.setOnClickListener((v) -> {
+        Button addAnimalButton = findViewById(R.id.button_add_animal);
+        addAnimalButton.setOnClickListener((v) -> {
             Animal unicorn = new Animal(R.string.unicorn, R.drawable.unicorn, new Random().nextInt(8) + 1);
             animalList.add(unicorn);
             int position = animalList.indexOf(unicorn);
             animalAdapter.notifyItemInserted(position);
             animalAdapter.notifyDataSetChanged();
+        });
+
+        Button navigateButton = findViewById(R.id.button_navigate);
+        navigateButton.setOnClickListener((v) -> {
+            Intent navIntent = new Intent(this, FormattingStringActivity.class);
+            startActivity(navIntent);
         });
     }
 }

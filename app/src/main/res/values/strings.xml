@@ -18,4 +18,10 @@
     <string name="tiger" translatable="false">Tiger</string>
     <string name="unicorn">Unicorn</string>
     <string name="wolf" translatable="false">Wolf</string>
+    <string name="favorite_animal_heading">What is your favorite animal?</string>
+    <string name="user_name">Enter your name</string>
+    <string name="favorite_animal">Enter your favorite animal</string>
+    <string name="submit">Submit</string>
+    <string name="formatting_string">Hi %1$s! Your favorite animal is a %2$s.</string>
+    <string name="err_empty">Error! Please put in your name and favorite animal.</string>
 </resources>
