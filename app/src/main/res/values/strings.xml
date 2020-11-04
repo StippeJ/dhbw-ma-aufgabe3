@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Stippe Jan Assignment 3</string>
+    <string name="app_name">Assignment 3</string>
     <string name="animal_list">List of animals</string>
-    <string name="add_animal">New animal</string>
-    <string name="choose_animal">Favorite animal</string>
+    <string name="add_animal">Add animal</string>
+    <string name="choose_color">Choose favorite color</string>
     <string name="animal_picture">Picture of an animal</string>
     <string name="bat">Bat</string>
     <string name="bear">Bear</string>
@@ -18,10 +18,10 @@
     <string name="tiger" translatable="false">Tiger</string>
     <string name="unicorn">Unicorn</string>
     <string name="wolf" translatable="false">Wolf</string>
-    <string name="favorite_animal_heading">What is your favorite animal?</string>
+    <string name="favorite_color_heading">What is your favorite animal?</string>
     <string name="user_name">Enter your name</string>
-    <string name="favorite_animal">Enter your favorite animal</string>
+    <string name="favorite_color">Enter your favorite color</string>
     <string name="submit">Submit</string>
-    <string name="formatting_string">Hi %1$s! Your favorite animal is a %2$s.</string>
-    <string name="err_empty">Error! Please put in your name and favorite animal.</string>
+    <string name="formatting_string">Hi %1$s! Your favorite color is %2$s.</string>
+    <string name="err_empty">Error! Please fill in the textboxes.</string>
 </resources>
