@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aufgabe 3</string>
+    <string name="animal_list">Liste von Tieren</string>
+    <string name="add_animal">Tier hinzufügen</string>
+    <string name="choose_color">Lieblingsfarbe wählen</string>
+    <string name="animal_picture">Bild eines Tiers</string>
+    <string name="bat">Fledermaus</string>
+    <string name="bear">Bär</string>
+    <string name="cat">Katze</string>
+    <string name="dog">Hund</string>
+    <string name="fox">Fuchs</string>
+    <string name="mouse">Maus</string>
+    <string name="pig">Schwein</string>
+    <string name="rabbit">Hase</string>
+    <string name="squirrel">Eichhörnchen</string>
+    <string name="unicorn">Einhorn</string>
+    <string name="favorite_color_heading">Was ist deine Lieblingsfarbe?</string>
+    <string name="user_name">Gib deinen Namen ein</string>
+    <string name="favorite_color">Gib deine Lieblingsfarbe ein</string>
+    <string name="submit">Bestätigen</string>
+    <string name="formatting_string">Hi %1$s! Deine Lieblingsfarbe ist %2$s.</string>
+    <string name="err_empty">Error! Bitte fülle die Textboxen aus.</string>
+</resources>
