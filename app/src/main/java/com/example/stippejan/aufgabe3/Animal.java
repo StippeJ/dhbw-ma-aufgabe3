@@ -2,11 +2,13 @@ package com.example.stippejan.aufgabe3;
 
 public class Animal {
     int speciesStringId;
+    int genderDrawableId;
     int drawableId;
     int age;
 
-    public Animal(int speciesStringId, int drawableId, int age) {
+    public Animal(int speciesStringId, int genderDrawableId, int drawableId, int age) {
         this.speciesStringId = speciesStringId;
+        this.genderDrawableId = genderDrawableId;
         this.drawableId = drawableId;
         this.age = age;
     }
@@ -17,6 +19,14 @@ public class Animal {
 
     public void setSpeciesStringId(int speciesStringId) {
         this.speciesStringId = speciesStringId;
+    }
+
+    public int getGenderDrawableId() {
+        return genderDrawableId;
+    }
+
+    public void setGenderDrawableId(int genderDrawableId) {
+        this.genderDrawableId = genderDrawableId;
     }
 
     public int getDrawableId() {

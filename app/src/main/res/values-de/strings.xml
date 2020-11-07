@@ -3,8 +3,11 @@
     <string name="app_name">Aufgabe 3</string>
     <string name="animal_list">Liste von Tieren</string>
     <string name="add_animal">Tier hinzufügen</string>
-    <string name="choose_color">Lieblingsfarbe wählen</string>
+    <string name="personal_data">Persönliche Daten</string>
     <string name="animal_picture">Bild eines Tiers</string>
+    <string name="animal_gender">Bild zeigt das Geschlecht des Tieres an.</string>
+    <string name="age_title">Alter:</string>
+    <string name="gender_title">Geschlecht:</string>
     <string name="bat">Fledermaus</string>
     <string name="bear">Bär</string>
     <string name="cat">Katze</string>

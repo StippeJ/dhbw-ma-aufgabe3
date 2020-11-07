@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder> {
 
-    public ArrayList<Animal> animalList = new ArrayList<>();
+    public ArrayList<Animal> animalList;
 
     public AnimalAdapter(ArrayList<Animal> animalList) {
         this.animalList = animalList;
@@ -23,8 +23,7 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
     @Override
     public AnimalAdapter.AnimalViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_animal, parent, false);
-        AnimalViewHolder vh = new AnimalViewHolder(v);
-        return vh;
+        return new AnimalViewHolder(v);
     }
 
     @Override
@@ -32,6 +31,7 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
         Animal a = animalList.get(position);
         holder.picture.setImageResource(a.getDrawableId());
         holder.species.setText(a.getSpeciesStringId());
+        holder.gender.setImageResource(a.getGenderDrawableId());
         holder.age.setText(Integer.toString(a.getAge()));
     }
 
@@ -44,14 +44,16 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
 
         ImageView picture;
         TextView species;
+        ImageView gender;
         TextView age;
 
         public AnimalViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            picture = (ImageView) itemView.findViewById(R.id.a_drawable);
-            species = (TextView) itemView.findViewById(R.id.a_species);
-            age = (TextView) itemView.findViewById(R.id.a_age);
+            picture = itemView.findViewById(R.id.a_drawable);
+            species = itemView.findViewById(R.id.a_species);
+            gender = itemView.findViewById(R.id.a_gender);
+            age = itemView.findViewById(R.id.a_age);
         }
     }
 }

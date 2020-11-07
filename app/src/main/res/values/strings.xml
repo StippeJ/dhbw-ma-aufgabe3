@@ -2,8 +2,11 @@
     <string name="app_name">Assignment 3</string>
     <string name="animal_list">List of animals</string>
     <string name="add_animal">Add animal</string>
-    <string name="choose_color">Choose favorite color</string>
+    <string name="personal_data">Personal data</string>
     <string name="animal_picture">Picture of an animal</string>
+    <string name="animal_gender">Picture shows the gender of the animal</string>
+    <string name="age_title">Age:</string>
+    <string name="gender_title">Gender:</string>
     <string name="bat">Bat</string>
     <string name="bear">Bear</string>
     <string name="cat">Cat</string>
