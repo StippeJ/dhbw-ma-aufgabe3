@@ -20,15 +20,17 @@ public class FormattingStringActivity extends AppCompatActivity {
         super.onStart();
 
         EditText nameEditText = findViewById(R.id.name_edit_text);
+        EditText ageEditText = findViewById(R.id.age_edit_text);
         EditText favoriteColorEditText = findViewById(R.id.color_edit_text);
 
         Button insertButton = findViewById(R.id.insert_button);
         insertButton.setOnClickListener((v) -> {
             String userName = nameEditText.getText().toString();
+            String age = ageEditText.getText().toString();
             String favoriteColor = favoriteColorEditText.getText().toString();
 
-            if (userName.length() > 0 && favoriteColor.length() > 0) {
-                Toast.makeText(this, getString(R.string.formatting_string, userName, favoriteColor), Toast.LENGTH_LONG).show();
+            if (userName.length() > 0 && age.length() > 0 && favoriteColor.length() > 0) {
+                Toast.makeText(this, getString(R.string.formatting_string, userName, age, favoriteColor), Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(this, getString(R.string.err_empty), Toast.LENGTH_LONG).show();
             }

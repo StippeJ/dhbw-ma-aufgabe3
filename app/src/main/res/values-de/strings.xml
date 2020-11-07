@@ -16,9 +16,10 @@
     <string name="squirrel">Eichhörnchen</string>
     <string name="unicorn">Einhorn</string>
     <string name="favorite_color_heading">Was ist deine Lieblingsfarbe?</string>
-    <string name="user_name">Gib deinen Namen ein</string>
-    <string name="favorite_color">Gib deine Lieblingsfarbe ein</string>
+    <string name="name_hint">Gib deinen Namen ein</string>
+    <string name="age_hint">Gib dein Alter ein</string>
+    <string name="color_hint">Gib deine Lieblingsfarbe ein</string>
     <string name="submit">Bestätigen</string>
-    <string name="formatting_string">Hi %1$s! Deine Lieblingsfarbe ist %2$s.</string>
-    <string name="err_empty">Error! Bitte fülle die Textboxen aus.</string>
+    <string name="formatting_string">Hi %1$s! Du bist %2$s Jahre alt und deine Lieblingsfarbe ist %3$s.</string>
+    <string name="err_empty">Error! Bitte fülle alle Textboxen aus.</string>
 </resources>
