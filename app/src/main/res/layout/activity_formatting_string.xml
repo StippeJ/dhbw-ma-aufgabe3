@@ -14,7 +14,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/favorite_color_heading" />
+        android:text="@string/favorite_color_heading"
+        style="@style/HeadingStyle" />
 
     <EditText
         android:id="@+id/name_edit_text"

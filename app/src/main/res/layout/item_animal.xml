@@ -40,7 +40,7 @@
             app:layout_constraintStart_toEndOf="@+id/a_drawable"
             app:layout_constraintEnd_toStartOf="@+id/a_gender_title"
             app:layout_constraintBottom_toBottomOf="@+id/a_drawable"
-            android:textStyle="bold" />
+            style="@style/ListTextStyle" />
 
         <TextView
             android:id="@+id/a_gender_title"

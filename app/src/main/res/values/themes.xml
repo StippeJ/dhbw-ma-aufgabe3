@@ -6,4 +6,16 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="HeadingStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@color/colorPrimaryNight</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="ListTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/colorAccentNight</item>
+    </style>
 </resources>
